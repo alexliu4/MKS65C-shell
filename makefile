@@ -1,12 +1,12 @@
-all: fork.o
-	gcc fork.o
+all: shell.o
+	gcc shell.o
 
 run: all
 	./a.out
 	make clean
- 
-file.o: fork.c
-	gcc -c fork.c
+
+file.o: shell.c
+	gcc -c shell.c
 
 clean:
 	rm *.o
